@@ -4,10 +4,12 @@ import matplotlib.pyplot as plt
 import random as rd
 import seaborn as sns
 
+from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report, ConfusionMatrixDisplay
 
-df = pd.read_csv('C:\\Programação\\cumulative.csv', sep=',')
+BASE = Path(__file__).parent
+df = pd.read_csv(BASE / 'cumulative.csv', sep=',')
 
 colunas_usadas = ['koi_duration', 'koi_depth', 'koi_steff', 'koi_model_snr', 'koi_score', 'koi_prad', 'koi_period']
 
