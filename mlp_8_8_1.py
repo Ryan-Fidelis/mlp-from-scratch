@@ -35,8 +35,8 @@ x_np = np.array(x).T
 
 x_train, x_test, y_train, y_test = train_test_split(x_np, y, test_size=0.2, random_state=42)
 
-print(f"Tamanho do set de treino: {len(x_train)}")
-print(f"Tamanho do set de teste: {len(x_test)}")
+print(f"Training set size: {len(x_train)}")
+print(f"Test set size: {len(x_test)}")
 
 
 x_train = list(x_train)
@@ -173,7 +173,7 @@ for j in range(epocas):
   epoca += 1
   erros_por_ciclo.clear()
 
-print(f"Treinamento finalizado sem erros \n Épocas passadas {epoca}")
+print(f"Training finish \n Total epochs {epoca}")
 
 # Plotando gráfico
 
@@ -195,7 +195,7 @@ erro_total_teste = 0
 lista_prev = []
 lista_real = []
 
-print("Iniciando a fase de testes...\n")
+print("Initiating tests...\n")
 
 for contas in range(len(y_test)):
 
@@ -231,13 +231,13 @@ taxa_acerto = (acertos / total_amostras) * 100
 erro_medio_teste = erro_total_teste / total_amostras
 
 print("-" * 35)
-print("RESULTADOS DO TESTE")
+print("TEST RESULTS")
 print("-" * 35)
-print(f"Total de planetas analisados: {total_amostras}")
-print(f"Acertos: {acertos}")
-print(f"Erros: {erros}")
-print(f"Taxa de Acerto (Acurácia): {taxa_acerto:.2f}%")
-print(f"Erro Médio (Loss): {erro_medio_teste:.4f}")
+print(f"Total analized planets: {total_amostras}")
+print(f"Correct answers: {acertos}")
+print(f"Errors: {erros}")
+print(f"Acurácia: {taxa_acerto:.2f}%")
+print(f"Loss: {erro_medio_teste:.4f}")
 
 # Matriz de confusão
 
@@ -251,9 +251,9 @@ plt.figure(figsize=(8, 6))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False,
             xticklabels=['Negativo', 'Positivo'],
             yticklabels=['Falso', 'Verdadeiro'])
-plt.xlabel('Valor Previsto')
-plt.ylabel('Valor Real')
-plt.title('Matriz de Confusão')
+plt.xlabel('Forecasted Value')
+plt.ylabel('Real Value')
+plt.title('Confusion Matrix')
 plt.show()
 
 # Relatório de classificação
@@ -262,7 +262,7 @@ print("")
 print("-" * 35)
 print()
 
-print('Relatório de Classificação:')
+print('Classification Report:')
 print(classification_report(lista_real, lista_prev))
 
 # Calculo de especificidade
@@ -275,4 +275,4 @@ TN = cm[0, 0]
 FP = cm[0, 1]
 
 espec = TN / (TN + FP)
-print(f'Especificidade: {espec:.2f}')
+print(f'Specificity: {espec:.2f}')
