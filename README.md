@@ -34,11 +34,11 @@ To build this network from the ground up, I applied several mathematical concept
 3. **Install dependencies**
 Make sure you have Python installed. You only need NumPy to run the core network.
    ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn
+   pip install numpy pandas matplotlib seaborn scikit-learn pathlib
    ```
 4. **Run the model**
    ```bash
-   python mlp_8_8_1.py
+   mlp_8_8_1.py
    ```
 📈 **Results and Learnings**
 
