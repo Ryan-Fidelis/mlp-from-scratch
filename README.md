@@ -43,7 +43,7 @@ This project leverages the NASA Kepler dataset from Kaggle. The goal was to sele
 
 The MLP architecture consists of 3 layers with an 8-8-1 structure, utilizing the Sigmoid activation function for binary classification. By building this entire network from scratch without relying on frameworks like PyTorch or TensorFlow, I gained a deep understanding of how these libraries function behind the scenes, enabling me to use them much more effectively in future projects.
 
-👨‍💻 Author
+👨‍💻 **Author**
 
 Developed by Ryan Fidelis - AI Technology Student.
 Transitioning from industrial mechanics to software development, bringing a strong diagnostic and problem-solving mindset to code.
