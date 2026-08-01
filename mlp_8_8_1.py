@@ -108,7 +108,7 @@ layer_2 = set_layer(8, 8)
 layer_output = set_layer(1, 8)
 
 # Treinamento
-epocas = 100
+epocas = 50
 epoca = 0
 erros_por_ciclo = []
 erros_por_epoca = []
