@@ -25,17 +25,21 @@ To build this network from the ground up, I applied several mathematical concept
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/Ryan-Fidelis/mlp-from-scratch](https://github.com/Ryan-Fidelis/mlp-from-scratch)
+   git clone [https://github.com/Ryan-Fidelis/mlp-from-scratch.git](https://github.com/Ryan-Fidelis/mlp-from-scratch.git)
+   ```
 2. **Navigate to the directory**
    ```bash
-   cd your-repo-name
+   cd mlp-from-scratch
+   ```
 3. **Install dependencies**
 Make sure you have Python installed. You only need NumPy to run the core network.
    ```bash
    pip install numpy pandas matplotlib
+   ```
 4. **Run the model**
    ```bash
-    python main.py
+   python mlp_8_8_1.py
+   ```
 📈 **Results and Learnings**
 
 This project leverages the NASA Kepler dataset from Kaggle. The goal was to select the most relevant features (columns) to train a simple neural network, aiming to mimic the analysis performed by the Kepler Space Telescope. 
