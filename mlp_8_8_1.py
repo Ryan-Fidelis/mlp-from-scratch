@@ -16,6 +16,9 @@ colunas_usadas = ['koi_duration', 'koi_depth', 'koi_steff', 'koi_model_snr', 'ko
 # Tirando todas linhas que tem qualquer coluna usada == Null
 df.dropna(subset=colunas_usadas, inplace=True)
 df.reset_index(drop=True, inplace=True)
+y_trat = ["koi_score"]
+y_trat.dropna()
+y_trat.reset_index(drop=true, inplace=True)
 
 def z(x):
   media = np.mean(x)
@@ -29,7 +32,7 @@ z_steff = z(df['koi_steff'])
 z_model_snr = z(df['koi_model_snr'])
 z_prad = z(df['koi_prad'])
 z_period = df['koi_period']
-y = df["koi_score"]
+y = y_trat
 x = [z_duration, z_depth, z_steff, z_model_snr, z_prad, z_period]
 
 # Separando set de treino e set de teste em 80% - 20%
