@@ -1,44 +1,43 @@
 # mlp-from-scratch
-# mlp-from-scratch
 # 🧠 Multilayer Perceptron (MLP) from Scratch
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 
-## 📌 Overview
+## **Overview**
 An implementation of a Multilayer Perceptron (MLP) neural network built entirely from scratch in Python. 
 
 The main goal of this project is educational: to truly understand how artificial intelligence works **under the hood**. Instead of relying on high-level frameworks like TensorFlow or PyTorch, this project implements the core mathematical foundations of Deep Learning, including linear algebra, matrix multiplication, and calculus-based optimization.
 
-## ⚙️ Features
+##  **Features**
 *   **Fully custom architecture:** Configurable number of hidden layers and neurons.
 *   **Forward Propagation:** Implemented using pure matrix operations.
 *   **Backpropagation:** Custom implementation of Gradient Descent to update weights and biases.
 *   **Activation Functions:** Built-in mathematical functions and their derivatives.
 *   **No Black Boxes:** Only built-in Python tools and NumPy were used for matrix manipulation.
 
-## 🧮 Mathematical Foundations Applied
+##  **Mathematical Foundations Applied**
 To build this network from the ground up, I applied several mathematical concepts directly into code:
 *   **Linear Algebra:** Vectors, matrices, and dot products for weighting inputs.
 *   **Calculus:** Partial derivatives and the chain rule for backpropagation.
 *   **Optimization:** Minimizing the loss function through iterative gradient steps.
 
-## 🚀 How to Run the Project
+## **How to Run the Project**
 
 1. **Clone the repository**
    ```bash
    git clone [https://github.com/Ryan-Fidelis/mlp-from-scratch](https://github.com/Ryan-Fidelis/mlp-from-scratch)
-2. Navigate to the directory
+2. **Navigate to the directory**
    ```bash
    cd your-repo-name
-3. Install dependencies
+3. **Install dependencies**
 Make sure you have Python installed. You only need NumPy to run the core network.
    ```bash
    pip install numpy pandas matplotlib
-4. Run the model
+4. **Run the model**
    ```bash
     python main.py
-📈 Results and Learnings
+📈 **Results and Learnings**
 
 This project leverages the NASA Kepler dataset from Kaggle. The goal was to select the most relevant features (columns) to train a simple neural network, aiming to mimic the analysis performed by the Kepler Space Telescope. 
 
