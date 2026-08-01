@@ -40,13 +40,13 @@ Make sure you have Python installed. You only need NumPy to run the core network
    ```bash
    mlp_8_8_1.py
    ```
-📈 **Results and Learnings**
+**Results and Learnings**
 
 This project leverages the NASA Kepler dataset from Kaggle. The goal was to select the most relevant features (columns) to train a simple neural network, aiming to mimic the analysis performed by the Kepler Space Telescope. 
 
 The MLP architecture consists of 3 layers with an 8-8-1 structure, utilizing the Sigmoid activation function for binary classification. By building this entire network from scratch without relying on frameworks like PyTorch or TensorFlow, I gained a deep understanding of how these libraries function behind the scenes, enabling me to use them much more effectively in future projects.
 
-👨‍💻 **Author**
+**Author**
 
 Developed by Ryan Fidelis - AI Technology Student.
 Transitioning from industrial mechanics to software development, bringing a strong diagnostic and problem-solving mindset to code.
